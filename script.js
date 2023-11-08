@@ -1,11 +1,11 @@
 const container = document.querySelector('.container');
 const loading = document.querySelector('.loading')
-const API = "1d45d96d554b4f47936919587fc0e946";
+const API = "13f1c88363c8499b95f90e01db221efa";
 
 getData()
 
 async function getData() {
-    await fetch(`https://newsapi.org/v2/everything?q=apple&from=2023-06-26&to=2023-06-26&sortBy=popularity&apiKey=${API}`)
+    await fetch(`https://newsapi.org/v2/everything?q=tesla&from=2023-10-08&sortBy=publishedAt&apiKey=${API}`)
     .then((response) => response.json())
     .then((data) => {
         console.log(data);
